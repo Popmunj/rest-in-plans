@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+    background-color: whitesmoke;
+    font-family: sarabun;
+    @apply text-gray-700;
+}
+
+
+h1 {
+    @apply text-2xl font-medium;
+}
+
+h2 {
+    @apply text-xl font-medium;
+
+}
+
+h4 {
+    @apply text-lg font-medium text-gray-700;
+}
+
+p {
+    @apply font-normal text-gray-500;
+}
+
+/* Window */
+@media (min-width: 800px) {
+    
+    
+}
+
+
+/* Mobile */
+@media (max-width: 800px) {
+    
+}
+
+@font-face {
+    font-family: sarabun;
+    font-style: normal;
+  
+    font-display: swap;
+    src: url('../../public/NotoSansThai-VariableFont_wdth\,wght.ttf');
+}
