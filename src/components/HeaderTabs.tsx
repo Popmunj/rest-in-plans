@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { prisma } from "@/lib/prisma";
 
 interface TabProps {
   label: string;

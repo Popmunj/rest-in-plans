@@ -1,9 +1,17 @@
-import { prisma } from "@/lib/prisma";
 import IdCard from "@/components/pages/IdCard";
 import Progress from "@/components/pages/Progress";
 import Step from "@/components/pages/Step";
-const Planner = async () => {
-  const user = await prisma.user.findFirst({ where: { id: "0" } });
+const Planner = () => {
+  const user = {
+    id: 0,
+    name: "หนิง",
+    age: 30,
+    email: "ningningtechy@gmail.com",
+    phone: 1111111111,
+    status: "โสด",
+    occupation: "พนักงานบริษัท",
+    imgUrl: "/static/ning.png",
+  };
   return (
     <>
       <main className="flex flex-col lg:flex-row w-full h-wrap p-5 justify-center">
